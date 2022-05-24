@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>entity.Clientes</class>
+        <class>entity.Codigospostais</class>
+        <class>entity.Compras</class>
+        <class>entity.Faturas</class>
+        <class>entity.Fornecedores</class>
+        <class>entity.LinhaCompras</class>
+        <class>entity.LinhaVendas</class>
+        <class>entity.Marcas</class>
+        <class>entity.Modelos</class>
+        <class>entity.Permissoes</class>
+        <class>entity.Produtos</class>
+        <class>entity.Tipoprodutos</class>
+        <class>entity.Utilizadores</class>
+        <class>entity.Vendas</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.connection.username" value="ana"/>
+            <property name="hibernate.connection.password" value="1234"/>
+        </properties>
+    </persistence-unit>
+</persistence>
